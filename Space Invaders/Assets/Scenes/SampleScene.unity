@@ -616,6 +616,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Score Text
       objectReference: {fileID: 0}
+    - target: {fileID: 9106766582736118396, guid: bc9316de9617fda4caf682f3c4cb72fa, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
