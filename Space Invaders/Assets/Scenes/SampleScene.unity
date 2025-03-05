@@ -372,6 +372,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ae9bf74a3206174ea2213f59f79af8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  misselPrefab: {fileID: 1949947789213779562, guid: 421ce169678d72e4b8671386befd3e00, type: 3}
+  firePoint: {fileID: 1209481677}
   speed: 5
 --- !u!50 &1209481674
 Rigidbody2D:
@@ -381,7 +383,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1209481672}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
