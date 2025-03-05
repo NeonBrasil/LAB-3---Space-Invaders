@@ -18,6 +18,10 @@ public class Missel : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Destroy(gameObject); // Destroi ao colidir com algo
+        if (other.CompareTag("Invader"))
+        {
+            Destroy(other.gameObject); // Destroi o invasor
+        }
+        Destroy(gameObject); // Destroi o míssil
     }
 }

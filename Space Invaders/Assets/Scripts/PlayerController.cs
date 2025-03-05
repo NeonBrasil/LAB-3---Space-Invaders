@@ -4,8 +4,8 @@ public class PlayerController : MonoBehaviour
 {
     public GameObject misselPrefab;
     public Transform firePoint;
-    public float speed = 5.0f;
-    public float fireRate = 1.0f; // Tempo de recarga em segundos
+    public float speed = 6.0f;
+    public float fireRate = 0.4f; // Tempo de recarga em segundos
 
     private float nextFireTime = 0f;
 

@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 5367732701612039310}
   - component: {fileID: 2618791390918410587}
   - component: {fileID: 2192342785373751882}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: missel
-  m_TagString: Untagged
+  m_TagString: Missel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
