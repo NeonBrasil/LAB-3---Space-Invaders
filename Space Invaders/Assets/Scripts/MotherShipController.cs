@@ -21,12 +21,16 @@ public class MotherShipController : MonoBehaviour
     {
         if (other.CompareTag("Missel"))
         {
+            // Adicionar pontos ao destruir a nave mãe
+            ScoreManager.Instance.AddScore(50);
+
             // Destruir a nave mãe e o míssil ao colidirem
             Destroy(gameObject);
             Destroy(other.gameObject);
         }
     }
 }
+
 
 
 
