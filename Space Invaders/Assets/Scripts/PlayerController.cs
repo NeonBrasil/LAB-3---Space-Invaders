@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -36,8 +37,8 @@ public class PlayerController : MonoBehaviour
             if (lives <= 0)
             {
                 Debug.Log("Jogador perdeu todas as vidas! Fim de jogo.");
-                // Adicione aqui a lógica para finalizar o jogo, como reiniciar a cena ou mostrar uma tela de game over
-                Destroy(gameObject);
+                // Carregar a cena de derrota
+                SceneManager.LoadScene("GameOverScene");
             }
 
             // Destruir o míssil do invasor
@@ -45,3 +46,4 @@ public class PlayerController : MonoBehaviour
         }
     }
 }
+
