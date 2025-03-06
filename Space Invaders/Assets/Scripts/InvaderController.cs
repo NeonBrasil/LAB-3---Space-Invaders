@@ -13,6 +13,7 @@ public class InvaderController : MonoBehaviour
     private Vector3 targetPosition;
     private bool movingRight = true;
     private float nextFireTime = 0f;
+    private GameManager gameManager;
 
     void Start()
     {
@@ -23,6 +24,9 @@ public class InvaderController : MonoBehaviour
         {
             firePoint = transform;
         }
+
+        // Obter referência ao GameManager
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     void Update()
@@ -116,6 +120,9 @@ public class InvaderController : MonoBehaviour
             }
             ScoreManager.Instance.AddScore(points);
 
+            // Notificar o GameManager que um invasor foi destruído
+            gameManager.InvaderDestroyed();
+
             Destroy(gameObject);
         }
         else if (other.CompareTag("InvaderMissel"))
@@ -132,5 +139,3 @@ public class InvaderController : MonoBehaviour
         Gizmos.DrawWireCube(transform.position + Vector3.down * 0.5f, new Vector2(1f, 0.5f));
     }
 }
-
-
